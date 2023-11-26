@@ -36,14 +36,14 @@ body {
 ol, ul {
 	list-style: none;
 }
-blockquote, q {
+/* blockquote, q {
 	quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
-}
+} */
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -63,17 +63,167 @@ table {
     --white:#FFF;
     --black:#000;
 }
+#skip{
+	position: absolute;
+	top: -1000px;
+}
+#skip:focus{
+	top: 10px;
+	left: 10px;
+	background-color: var(--white);
+}
+body{
+	background-color: var(--white);
+}
 h1,h2,h3{
     font-family: 'Molle', cursive;
 }
-h4,p,q,small,nav,button,form{
+h4,p,q,a,small,nav,button,form{
     font-family: 'Montserrat', sans-serif;
+}
+h1{
+	font-size: 4rem;
+}
+h2{
+	font-size: 3rem;
+}
+h3{
+	font-size: 2rem;;
+}
+p{
+	font-size: 1rem;;
+}
+/* COME BACK TO THIS */
+#menu-toggle{
+	display: none;
 }
 
 
 /* --- Screen width: XXXpx --- */
 /* Add Styles here (mobile-first) */
-
+header{
+	background-image: linear-gradient(var(--blue), var(--white));
+	height: 15rem;
+	padding: 1.5rem;
+}
+header p{
+	font-size: 1.2rem;
+}
+#logo{
+	
+}
+#intro h2{
+	padding-left: 1.5rem;
+}
+#intro p{
+	padding: .5rem 1.5rem;
+	line-height: 2rem;
+}
+#intro img{
+	width: 100%;
+}
+#plan{
+	background-color: var(--yellow);
+	padding: 2rem;
+}
+#plan section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--blue);
+	border-width: 5px;
+	border-color: var(--white);
+	border-style: solid;
+	border-radius: 10px;
+	padding: 1rem;
+	margin-top: 1rem;
+}
+#plan h4{
+	font-size: 2rem;
+	text-transform:uppercase;
+	padding-bottom: 1rem;
+	/* font-weight: bold; */
+}
+#testimonials {
+	padding: 2rem;
+}
+#testimonials h4{
+	font-size: 2rem;
+	font-weight: bold;
+	width: 60%;
+	padding-top: .5rem;
+}
+#testimonials section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding-top: 1rem;
+}
+#testimonials p{
+	padding-top: .2rem;
+}
+#testimonials q{
+	font-style: italic;
+	width: 50%;
+	padding-top: .2rem;
+}
+#about{
+	background-color: var(--blue);
+	padding: 2rem;
+}
+#about h3{
+	width: 50%;
+}
+#about h4{
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+#about img{
+	height: 6rem;
+}
+#about div{
+text-align: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+#about section{
+	padding-top: 1rem;
+}
+#contact{
+	padding: 2rem;
+}
+#contact .form-required{
+	font-size: 1rem;
+	font-family: 'Montserrat', sans-serif;
+}
+#contact .required{
+	color: var(--purple);
+}
+#contact div{
+	display: flex;
+	flex-direction: column;
+}
+#nums fieldset{
+	display: flex;
+	flex-direction: column;
+}
+footer{
+	background-color: var(--lightGrey);
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 1rem;
+	font-size: 1rem;
+}
+footer p{
+	padding: 1rem;
+}
+footer a{
+	text-decoration: none;
+	color: var(--black);
+	padding: .5rem;
+}
 /* --- Screen width: XXXXpx --- */
 @media screen and (max-width: XXXpx){
 	/* Add Styles here */
